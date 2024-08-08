@@ -5,6 +5,15 @@ The Firebase Cloud Messaging Python quickstart app demonstrates sending
 notification messages to a topic. All clients subscribed to the topic
 will receive the message.
 
+Environment
+-----------
+
+- Google Cloud SDK 485.0.0
+- bq 2.1.7
+- core 2024.07.19
+- gcloud-crc32c 1.0.0
+- gsutil 5.30
+
 Introduction
 ------------
 
