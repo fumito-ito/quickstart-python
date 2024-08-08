@@ -65,10 +65,10 @@ def _build_common_message():
   """
   return {
     'message': {
-      'topic': 'news',
+      'topic': 'breaking',
       'notification': {
-        'title': 'FCM Notification',
-        'body': 'Notification from FCM'
+        'title': '外為10時 円相場、乱高下 146円台に下落後144円台へ',
+        'body': '6日午前の東京外国為替市場で円相場は乱高下している。10時時点は1ドル=145円17〜20銭と前日17時時点と比べて1円70銭の円安・ドル高だった。'
       }
     }
   }
