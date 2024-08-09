@@ -5,6 +5,12 @@ The Firebase Cloud Messaging Python quickstart app demonstrates sending
 notification messages to a topic. All clients subscribed to the topic
 will receive the message.
 
+Test Steps
+----------
+
+1. run `$ poetry install`
+1. run `$ poetry run python messaging.py --message=override-message`
+
 Environment
 -----------
 
