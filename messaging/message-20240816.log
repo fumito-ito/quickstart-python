@@ -1,0 +1,30 @@
+➜  messaging git:(master) ✗ poetry run python messaging.py --message=override-message
+FCM request body for override message:
+{
+  "message": {
+    "topic": "breaking",
+    "notification": {
+      "title": "Google\u3001AI\u691c\u7d22\u6a5f\u80fd\u3092\u65e5\u672c\u3067\u3082\u958b\u59cb \u7d50\u679c\u3092\u8981\u7d04",
+      "body": "\u3010\u30b7\u30ea\u30b3\u30f3\u30d0\u30ec\u30fc=\u6e21\u8fba\u76f4\u6a39\u3011\u7c73\u30b0\u30fc\u30b0\u30eb\u306f15\u65e5\u3001\u4eba\u5de5\u77e5\u80fd\uff08AI\uff09\u304c\u691c\u7d22\u7d50\u679c\u3092\u8981\u7d04\u3059\u308b\u65b0\u6a5f\u80fd\u3092\u65e5\u672c\u3092\u542b\u3080\u8a086\u30ab\u56fd\u3067\u59cb\u3081\u308b\u3068\u767a\u8868\u3057\u305f\u3002"
+    },
+    "android": {
+      "notification": {
+        "click_action": "android.intent.action.MAIN"
+      }
+    },
+    "apns": {
+      "payload": {
+        "aps": {
+          "badge": 1
+        }
+      },
+      "headers": {
+        "apns-priority": "10"
+      }
+    }
+  }
+}
+Message sent to Firebase for delivery, response:
+{
+  "name": "projects/<my-app-id>/messages/8395083564482969817"
+}
