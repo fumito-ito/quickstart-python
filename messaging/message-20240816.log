@@ -24,7 +24,12 @@ FCM request body for override message:
     }
   }
 }
+FCM request headers for override message:
+{
+  "Authorization": "Bearer <my-app-token>",
+  "Content-Type": "application/json; UTF-8"
+}
 Message sent to Firebase for delivery, response:
 {
-  "name": "projects/<my-app-id>/messages/8395083564482969817"
+  "name": "projects/<my-app-id>/messages/9028295777357739065"
 }
