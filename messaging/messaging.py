@@ -46,6 +46,8 @@ def _send_fcm_message(fcm_message):
     'Authorization': 'Bearer ' + _get_access_token(),
     'Content-Type': 'application/json; UTF-8',
   }
+  print('FCM request headers for override message:')
+  print(json.dumps(headers, indent=2))
   # [END use_access_token]
   resp = requests.post(FCM_URL, data=json.dumps(fcm_message), headers=headers)
 
